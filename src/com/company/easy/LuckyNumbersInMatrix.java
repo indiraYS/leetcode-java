@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LuckyNumbersInMatrix {
-    public List<Integer> luckyNumbers (int[][] matrix)
+    public List<Integer> luckyNumbers(int[][] matrix)
     {
         List<Integer> min = new ArrayList<>();
         List<Integer> max = new ArrayList<>();
@@ -24,7 +24,6 @@ public class LuckyNumbersInMatrix {
             }
             max.add(cmax);
         }
-
 
         return intersection(min, max);
     }
@@ -53,7 +52,7 @@ public class LuckyNumbersInMatrix {
     public List<Integer> intersection(List<Integer> list1, List<Integer> list2) {
         List<Integer> list = new ArrayList<Integer>();
         for (Integer t : list1) {
-            if(list2.contains(t)) {
+            if (list2.contains(t)) {
                 list.add(t);
             }
         }
