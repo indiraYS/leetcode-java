@@ -8,6 +8,7 @@ import java.util.LinkedList;
 import java.util.Map;
 
 public class BinaryTreeVerticalTraversal {
+    /* https://leetcode.com/problems/binary-tree-vertical-order-traversal/ */
     public List<List<Integer>> verticalOrder(TreeNode root) {
         Map<Integer, List<Integer>> mp = new HashMap<>();
         List<List<Integer>> lst = new ArrayList<>();
